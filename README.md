@@ -8,8 +8,13 @@ After pushing, enable **GitHub Pages** (optional) so you get a stable public URL
 
 1. Repository → **Settings** → **Pages**
 2. **Source**: Deploy from branch `main`, folder `/ (root)`
-3. Your policy URL will look like:  
-   `https://satyapksh9.github.io/<repo-name>/privacy-policy.html`
+3. **Custom domain**: leave this **empty** unless you own a real domain (e.g. `policy.example.com`).  
+   Do **not** enter `satyapksh9.github.io`, any path, or `https://…` — that field is only for [domains you control](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages). Putting a full `github.io/.../file.html` URL there triggers a [format error](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages#github-repository-setup-errors).
+4. After the site builds, open your policy at:  
+   `https://satyapksh9.github.io/Privacy-Policy/privacy-policy.html`  
+   (The middle segment must match your **exact** repository name, including capital letters.)
+
+Use that full HTTPS link in Google Play — **not** the Custom domain box in Settings.
 
 ## Push this folder to a new GitHub repo
 
